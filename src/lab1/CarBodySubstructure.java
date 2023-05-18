@@ -3,6 +3,9 @@ package lab1;
 import java.awt.Color;
 import java.awt.Polygon;
 
+/**
+ * A class that represents the substructure of a car body.
+ */
 public class CarBodySubstructure {
 
     public void drawAt(int x, int y) {

@@ -3,8 +3,10 @@ package lab1;
 import java.awt.Color;
 import java.awt.Polygon;
 
+/**
+ * A class that represents the bottom of a car body.
+ */
 public class CarBodyBottom {
-
     private CarDoor[] doors;
 
     public CarBodyBottom() {
@@ -47,7 +49,5 @@ public class CarBodyBottom {
         backDoorFrame.addPoint(x + backDoorStart, y + backHeight + 4);
 
         this.doors[1].drawAt(x, y, backDoorFrame);
-
     }
-
 }

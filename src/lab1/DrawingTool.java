@@ -3,6 +3,10 @@ package lab1;
 import javax.swing.JFrame;
 import java.awt.Dimension;
 
+/**
+ * This class represents a drawing tool.
+ * It is a window that contains a drawing area.
+ */
 public class DrawingTool extends JFrame {
     // This is a serial version UID.
     // It is used to identify the version of a serializable class.

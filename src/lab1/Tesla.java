@@ -1,5 +1,8 @@
 package lab1;
 
+/**
+ * A class that represents a Tesla.
+ */
 public class Tesla {
 
     private CarBody body;

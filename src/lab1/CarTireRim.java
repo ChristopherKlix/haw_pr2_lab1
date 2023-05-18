@@ -2,6 +2,9 @@ package lab1;
 
 import java.awt.Color;
 
+/**
+ * A class that represents a car tire.
+ */
 public class CarTireRim {
 
     public void drawAt(int x, int y) {

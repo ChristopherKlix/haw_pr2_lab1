@@ -2,6 +2,7 @@ package lab1;
 
 import javax.swing.JFrame;
 import java.awt.Dimension;
+import java.io.Serial;
 
 /**
  * This class represents a drawing tool.
@@ -10,6 +11,7 @@ import java.awt.Dimension;
 public class DrawingTool extends JFrame {
     // This is a serial version UID.
     // It is used to identify the version of a serializable class.
+    @Serial
     private static final long serialVersionUID = 1L;
 
     // The drawing area object

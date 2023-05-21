@@ -2,11 +2,13 @@ package lab1;
 
 import javax.swing.JPanel;
 import java.awt.Graphics;
+import java.io.Serial;
 
 /**
  * A class that provides a static reference to the pen used for drawing.
  */
 public class DrawingArea extends JPanel {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Override

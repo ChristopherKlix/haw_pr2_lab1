@@ -8,8 +8,13 @@ import java.awt.Graphics;
 public class Drawing {
     private static Graphics pen;
 
+    private Drawing() {
+        // This is a utility class.
+        // It should not be instantiated.
+    }
+
     public static void setPen(Graphics graphics) {
-        pen = graphics;
+        Drawing.pen = graphics;
     }
 
     public static Graphics getPen() {

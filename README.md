@@ -2,36 +2,52 @@
 
 This is the UML diagram for a Car.
 
-```Java
-public class Car {
-    
-}
-```
-
 ```mermaid
 ---
-title: Car Example
+title: Tesla Class Implementation
 ---
 classDiagram
-    note "This is a note on class diagram."
-    Animal <|-- Duck
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
+    note "This is a note on a class diagram."
+    class Cybertruck {
+        <<final>>
     }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
+    class Model3 {
+        <<final>>
     }
-    class Zebra{
-        +bool is_wild
-        +run()
+    class Tesla {
+        <<abstract>>
+    }
+    class Car {
+        <<abstract>>
+        - CarManufacturer manufacturer
+        - String model
+        - CarBody body
+        - CarTire[] tires
+
+        + getManufacturer(): CarManufacturer
+        + setManufacturer(CarManufacturer manufacturer): void
+        + getModel(): String
+        + setModel(String model): void
+    }
+    
+    Model3 <|-- Tesla
+    Cybertruck <|-- Tesla
+    Tesla <|-- Car
+    
+    Car "1..1" <-- "*" CarManufacturer
+    Car "1..1" *-- "1..1" CarBody
+    Car "0..*" *-- "1..1" CarTire
+    
+    class CarManufacturer {
+        <<enumeration>>
+        Generic
+        TESLA
+        ...
+    }
+    
+    class CarBody {
+    }
+    
+    class CarTire {
     }
 ```

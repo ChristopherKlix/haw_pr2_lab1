@@ -18,10 +18,10 @@ public class Drawing {
     }
 
     public static Graphics getPen() {
-        if (pen == null) {
+        if (Drawing.pen == null) {
             throw new IllegalStateException("Drawing pen has not been set");
         }
 
-        return pen;
+        return Drawing.pen;
     }
 }

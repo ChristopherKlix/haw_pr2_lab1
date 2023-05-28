@@ -15,7 +15,8 @@ public class App {
 
         switch (labNumber) {
             case 1:
-                Lab1Main.start();
+                Lab1Main lab1 = Lab1Main.getInstance();
+                lab1.start();
                 break;
             case 2:
                 throw new Exception("Lab 2 not implemented.");

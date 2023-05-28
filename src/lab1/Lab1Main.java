@@ -24,6 +24,7 @@ public class Lab1Main {
         MainWindow mainWindow = MainWindow.getInstance();
         mainWindow.setWindowSize(800, 600);
         mainWindow.setPosition(100, 100);
+        mainWindow.setTitle("Lab 1");
         mainWindow.start();
     }
 

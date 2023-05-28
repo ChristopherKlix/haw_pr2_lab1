@@ -41,7 +41,17 @@ public class MainWindow extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Stops the window.
+     */
 
+    public int stop() {
+        System.out.println("MainWindow.stop");
+
+        this.setVisible(false);
+
+        return 0;
+    }
 
     /**
      * Sets the window size to the screen size.
